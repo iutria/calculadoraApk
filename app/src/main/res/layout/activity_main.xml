@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:background="#181818"
+        android:gravity="bottom">
+        <EditText
+            android:id="@+id/txtSalida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:gravity="left"
+            android:text="0"
+            android:paddingRight="5sp"
+            android:paddingLeft="5sp"
+            android:paddingTop="10sp"
+            android:background="@null"
+            android:textColor="#A6A6A6"
+            android:textColorHighlight="#570000"
+            android:textColorLink="#FFC107"
+            android:textCursorDrawable="@android:drawable/button_onoff_indicator_off"
+            android:textSize="20sp"
+            android:visibility="visible"
+            android:onClick="ponerOperacion"/>
+        <EditText
+            android:id="@+id/txtEntrada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:gravity="right"
+            android:padding="5sp"
+            android:text="0"
+            android:background="@null"
+            android:textColor="#A6A6A6"
+            android:textColorHighlight="#570000"
+            android:textColorLink="#FFC107"
+            android:textCursorDrawable="@android:drawable/button_onoff_indicator_off"
+            android:textSize="80sp"
+            android:visibility="visible" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="("
+                android:textColor="#2684C7"
+                android:textSize="34sp"
+                app:backgroundTint="#000000"
+                android:onClick="agregar"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text=")"
+                android:textColor="#2684C7"
+                android:textSize="34sp"
+                app:backgroundTint="#000000"
+                android:onClick="agregar"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="C"
+                android:textColor="#2684C7"
+                android:textSize="34sp"
+                app:backgroundTint="#000000"
+                android:onClick="Borrar"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:onClick="Eliminar"
+                android:text="AC"
+                android:textColor="#B20909"
+                android:textSize="34sp"
+                app:backgroundTint="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:onClick="agregar"
+                android:text="7"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                app:backgroundTint="#000000" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:onClick="agregar"
+                android:text="8"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                app:backgroundTint="#000000" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:onClick="agregar"
+                android:text="9"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                app:backgroundTint="#000000" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="/"
+                android:textColor="#2684C7"
+                android:textSize="34sp"
+                app:backgroundTint="#000000"
+                android:onClick="agregar"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:onClick="agregar"
+                android:text="4"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                app:backgroundTint="#000000" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:onClick="agregar"
+                android:text="5"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                app:backgroundTint="#000000" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:onClick="agregar"
+                android:text="6"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                app:backgroundTint="#000000" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="*"
+                android:textColor="#2684C7"
+                android:textSize="34sp"
+                app:backgroundTint="#000000"
+                android:onClick="agregar"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:onClick="agregar"
+                android:text="1"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                app:backgroundTint="#000000" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:onClick="agregar"
+                android:text="2"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                app:backgroundTint="#000000" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:onClick="agregar"
+                android:text="3"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                app:backgroundTint="#000000" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="~"
+                android:textColor="#2684C7"
+                android:textSize="34sp"
+                app:backgroundTint="#000000"
+                android:onClick="agregar"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:onClick="agregar"
+                android:text="."
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                app:backgroundTint="#000000" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:onClick="agregar"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                app:backgroundTint="#000000" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:onClick="Calcular"
+                android:text="="
+                android:textColor="#2684C7"
+                android:textSize="34sp"
+                app:backgroundTint="#000000" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="+"
+                android:textColor="#2684C7"
+                android:textSize="34sp"
+                app:backgroundTint="#000000"
+                android:onClick="agregar"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
